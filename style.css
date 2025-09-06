@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo da Seção Hero */
+.hero-bg {
+    background-image: linear-gradient(rgba(29, 38, 51, 0.7), rgba(29, 38, 51, 0.7)), url('https://placehold.co/1920x1080/4a5568/ffffff?text=Fundo+Moderno');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Animações */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    opacity: 0; /* Inicia invisível */
+}
+
+/* Animação para o botão da Hero */
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Animação de Fade-in para seções ao rolar */
+.section-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos do Modal */
+.modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+.modal.flex { /* Quando está aberto */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    transform: scale(0.95);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.flex .modal-content {
+    transform: scale(1);
+}
+
+/* Logo Personalizado */
+.custom-logo {
+    height: 60px; /* Aumenta a altura para 60px */
+    width: auto; /* Garante que a largura se ajuste proporcionalmente */
+    transition: height 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Reduzir o logo quando o header encolhe */
+header.py-2 .custom-logo {
+    height: 50px;
+}
+

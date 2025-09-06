@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ferreira MEI - Soluções Administrativas e Automação</title>
+    <meta name="description" content="JS Ferreira MEI - Soluções inteligentes em automação de processos e suporte administrativo para otimizar seu tempo e seus negócios.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex-shrink-0">
+                <img src="d79f4266-8492-4263-908d-72bfb685077d.jpg" alt="Logo JS Ferreira" class="custom-logo">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition duration-300">Início</a>
+                <a href="#solucoes" class="text-gray-600 hover:text-blue-600 transition duration-300">Soluções</a>
+                <a href="#diferenciais" class="text-gray-600 hover:text-blue-600 transition duration-300">Diferenciais</a>
+                <a href="#sobre" class="text-gray-600 hover:text-blue-600 transition duration-300">Sobre Nós</a>
+                <a href="#contato" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">Fale Conosco</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#inicio" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Início</a>
+            <a href="#solucoes" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Soluções</a>
+            <a href="#diferenciais" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Diferenciais</a>
+            <a href="#sobre" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Sobre Nós</a>
+            <a href="#contato" class="block py-4 px-6 text-center bg-blue-600 text-white font-bold">Fale Conosco</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Inicial (Hero) -->
+        <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in-down">Soluções inteligentes para otimizar seu tempo e seus negócios.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up">Simplificamos a burocracia e automatizamos processos para que você possa focar no crescimento da sua empresa.</p>
+                <a href="#contato" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-xl inline-block animate-bounce">Quero Otimizar Meu Negócio</a>
+            </div>
+        </section>
+
+        <!-- Seção de Soluções -->
+        <section id="solucoes" class="py-20 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossas Soluções</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Serviços pensados para impulsionar a eficiência da sua empresa. Clique para saber mais.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card de Solução 1 -->
+                    <div data-modal-target="#modal-extracao" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
+                            <i data-lucide="file-search-2"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Extração Inteligente de Anexos</h3>
+                        <p class="text-gray-600">Extraia anexos de centenas de PDFs automaticamente. Economize tempo, elimine erros e organize seus documentos com 100% de precisão.</p>
+                    </div>
+                    <!-- Card de Solução 2 -->
+                    <div data-modal-target="#modal-distribuicao" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
+                            <i data-lucide="folder-sync"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Distribuição Automática de Arquivos</h3>
+                        <p class="text-gray-600">Copie e cole arquivos em múltiplas pastas de forma instantânea. Automatize a distribuição e foque no que realmente importa.</p>
+                    </div>
+                    <!-- Card de Solução 3 -->
+                    <div data-modal-target="#modal-suporte" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
+                            <i data-lucide="clipboard-list"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Suporte Administrativo Geral</h3>
+                        <p class="text-gray-600">Oferecemos apoio completo em rotinas administrativas, cadastro de imóveis, organização de documentos e mais.</p>
+                    </div>
+                     <!-- Card de Solução 4 -->
+                    <div data-modal-target="#modal-personalizada" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Automação Personalizada</h3>
+                        <p class="text-gray-600">Tem um processo que consome seu tempo? Analisamos seu desafio e criamos a solução de automação ideal para sua necessidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Diferenciais -->
+        <section id="diferenciais" class="py-20 bg-gray-100 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que escolher a JS Ferreira?</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Nossos diferenciais garantem o sucesso e a tranquilidade do seu negócio.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                     <!-- Diferencial 1 -->
+                    <div class="text-center p-6">
+                        <div class="bg-blue-600 text-white rounded-full p-4 inline-flex mb-4 shadow-lg">
+                            <i data-lucide="timer"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Otimização de Tempo</h3>
+                        <p class="text-gray-600">Reduza horas de trabalho manual e foque no que realmente importa para o crescimento da sua empresa.</p>
+                    </div>
+                     <!-- Diferencial 2 -->
+                    <div class="text-center p-6">
+                        <div class="bg-blue-600 text-white rounded-full p-4 inline-flex mb-4 shadow-lg">
+                            <i data-lucide="dollar-sign"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Redução de Custos</h3>
+                        <p class="text-gray-600">Minimize erros, retrabalho e despesas operacionais com processos mais eficientes e automatizados.</p>
+                    </div>
+                     <!-- Diferencial 3 -->
+                    <div class="text-center p-6">
+                        <div class="bg-blue-600 text-white rounded-full p-4 inline-flex mb-4 shadow-lg">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Segurança e Conformidade</h3>
+                        <p class="text-gray-600">Garantimos que seus cadastros e processos estejam sempre em conformidade com as normas vigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção Sobre Nós -->
+        <section id="sobre" class="py-20 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="d79f4266-8492-4263-908d-72bfb685077d.jfif" alt="Equipe JS Ferreira" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Parceria Estratégica para seu Negócio</h2>
+                        <p class="text-gray-600 mb-6">
+                            A JS Ferreira MEI nasceu do desejo de simplificar a gestão para pequenas e médias empresas. Unimos expertise administrativa com tecnologia de ponta para oferecer soluções que realmente fazem a diferença no dia a dia dos nossos clientes. Nossa missão é ser o parceiro estratégico que impulsiona o seu crescimento.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
+                                <span>Soluções personalizadas para sua necessidade.</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
+                                <span>Tecnologia de ponta para automação.</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
+                                <span>Atendimento próximo e dedicado.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section class="py-20 bg-blue-600 text-white section-fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8">O que nossos clientes dizem</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
+                        <p class="text-lg italic mb-4">"A JS Ferreira transformou a gestão da minha empresa. A automação de processos economizou nosso tempo e reduziu erros drasticamente. Recomendo demais!"</p>
+                        <p class="font-bold text-yellow-300">- João Empreendedor, CEO Startup X</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="py-20 bg-gray-100 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Pronto para otimizar seu negócio?</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Fale conosco e descubra como nossas soluções podem ajudar sua empresa a crescer. O diagnóstico é gratuito!</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-2xl">
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Nome</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Como podemos ajudar seu negócio?" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-8 text-gray-600">
+                        <p class="font-semibold mb-2">Ou entre em contato diretamente:</p>
+                        <div class="flex justify-center items-center space-x-6">
+                            <a href="https://wa.me/5575981701297" target="_blank" class="flex items-center hover:text-blue-600">
+                                <i data-lucide="message-circle" class="mr-2"></i> WhatsApp
+                            </a>
+                            <a href="tel:+5575981701297" class="flex items-center hover:text-blue-600">
+                                <i data-lucide="phone" class="mr-2"></i> Ligar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <!-- Modal 1: Extração -->
+    <div id="modal-extracao" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="file-search-2"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Extração Inteligente de Anexos</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Preso na tarefa repetitiva de abrir dezenas de arquivos PDF para extrair anexos imbutidos nele? Esse processo manual, além de demorado, é suscetível a erros e consome horas preciosas. Nós transformamos essa tarefa em um processo de segundos.
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Como Funciona:</h4>
+            <ol class="list-decimal list-inside text-gray-600 space-y-2 mb-4">
+                <li><strong>Envio:</strong> Você nos envia os arquivos PDF que contêm os anexos imbutidos.</li>
+                <li><strong>Extração:</strong> Nosso sistema automatizado lê cada PDF, identifica todos os anexos que estão presentes dentro dele e os salva como arquivos individuais.</li>
+                <li><strong>Entrega:</strong> Você recebe uma pasta com todos os documentos extraídos, nomeados e perfeitamente organizados, prontos para uso.</li>
+            </ol>
+            <h4 class="font-semibold mb-2 text-gray-800">Ideal para:</h4>
+             <p class="text-gray-600">Escritórios de advocacia, contabilidade, engenharia, e qualquer empresa que lide com grande volume de documentação digital.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2: Distribuição -->
+    <div id="modal-distribuicao" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="folder-sync"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Distribuição Automática de Arquivos</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Cansado de copiar e colar o mesmo arquivo para várias pastas ou locais diferentes? Se sua equipe passa horas movendo arquivos repetidamente, nós temos a solução. Automatizamos a distribuição de documentos!
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Principais Benefícios:</h4>
+             <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><strong>Mais Rápido:</strong> Distribua 1, 10 ou 1000 arquivos idênticos para todas as pastas que precisar, em segundos.</li>
+                <li><strong>Sem Erros:</strong> Garanta que tudo esteja no lugar certo, sempre, eliminando falhas manuais.</li>
+                <li><strong>Economize Tempo:</strong> Libere sua equipe do trabalho repetitivo para focar em tarefas estratégicas que realmente importam.</li>
+            </ul>
+        </div>
+    </div>
+
+     <!-- Modal 3: Suporte -->
+    <div id="modal-suporte" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="clipboard-list"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Suporte Administrativo Geral</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Além da automação, oferecemos um suporte administrativo completo para garantir que a operação da sua empresa flua sem interrupções. Delegue as tarefas burocráticas e concentre-se no seu core business.
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Nossos serviços incluem:</h4>
+             <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Organização e formatação de documentos.</li>
+                <li>Entrada e gestão de dados em sistemas.</li>
+                <li>Cadastro completo e diagnóstico de imóveis para garantir regularidade e segurança.</li>
+                <li>E outras rotinas administrativas personalizadas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 4: Personalizada -->
+    <div id="modal-personalizada" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="lightbulb"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Automação Personalizada</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Cada empresa tem desafios únicos. Se você possui um processo específico que consome tempo e recursos, nós podemos criar uma solução de automação sob medida para resolver exatamente o seu problema.
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Nosso Processo:</h4>
+            <ol class="list-decimal list-inside text-gray-600 space-y-2 mb-4">
+                <li><strong>Diagnóstico:</strong> Realizamos uma consultoria para entender seu fluxo de trabalho, identificar os gargalos e as oportunidades de automação.</li>
+                <li><strong>Desenvolvimento:</strong> Nossa equipe projeta e constrói uma ferramenta ou script customizado para sua demanda.</li>
+                <li><strong>Implementação:</strong> Integramos a solução na sua rotina diária, oferecendo o treinamento necessário para sua equipe.</li>
+            </ol>
+             <p class="text-gray-600">Da geração de relatórios complexos ao preenchimento automático de formulários, transformamos seu desafio em eficiência.</p>
+        </div>
+    </div>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl font-bold mb-2">JS Ferreira MEI</p>
+            <p class="mb-4">Soluções inteligentes para otimizar seu tempo e seus negócios.</p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.instagram.com/js.ferreira_mei" target="_blank" class="hover:text-blue-400">
+                    <i data-lucide="instagram"></i>
+                </a>
+                <!-- Adicione outras redes sociais se tiver -->
+            </div>
+            <p class="text-gray-400 text-sm">&copy; <span id="year"></span> JS Ferreira MEI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+
+        // Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu mobile ao clicar em um link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Atualizar ano no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Animação de fade-in ao rolar
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section-fade-in').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Efeito de sombra no header ao rolar a página
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+
+        // Lógica dos Modals
+        const openModalButtons = document.querySelectorAll('[data-modal-target]');
+        
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = document.querySelector(button.dataset.modalTarget);
+                openModal(modal);
+            });
+        });
+
+        function openModal(modal) {
+            if (modal == null) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            // Adicionar event listeners de fechar aqui para garantir que só funcionem quando o modal está aberto
+            const closeModalButtons = modal.querySelectorAll('.close-modal-btn');
+            closeModalButtons.forEach(button => {
+                button.addEventListener('click', () => closeModal(modal));
+            });
+            modal.addEventListener('click', e => {
+                if (e.target === modal) {
+                    closeModal(modal);
+                }
+            });
+        }
+
+        function closeModal(modal) {
+            if (modal == null) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fechar modal com a tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const openModal = document.querySelector('.modal:not(.hidden)');
+                if (openModal) {
+                    closeModal(openModal);
+                }
+            }
+        });
+
+
+    </script>
+</body>
+</html>
+
