@@ -7,7 +7,7 @@ body {
     --header-height: 92px;
 }
 
-/* --- Estilos da Seção Hero com Vídeo --- */
+/* --- Estilos da Secção Hero com Vídeo --- */
 
 .hero-video-container {
     position: absolute;
@@ -65,7 +65,7 @@ body {
 
 .animate-fade-in-up {
     animation: fadeInUp 1s ease-out 0.5s forwards;
-    opacity: 0; /* Inicia invisível */
+    opacity: 0; /* Começa invisível */
 }
 
 /* Animação para o botão da Hero */
@@ -73,7 +73,7 @@ body {
     animation: bounce 2s infinite;
 }
 
-/* Animação de Fade-in para seções ao rolar */
+/* Animação de Fade-in para secções ao rolar */
 .section-fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -99,27 +99,42 @@ body {
 .modal-content {
     transform: scale(0.95);
     transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Limita a altura máxima do conteúdo do modal */
 }
 
 .modal.flex .modal-content {
     transform: scale(1);
 }
 
-/* --- Logo Personalizado --- */
+.modal-body {
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical apenas quando necessário */
+}
+
+
+/* --- Logótipo Personalizado --- */
 .custom-logo {
     height: 60px; /* Aumenta a altura para 60px */
     width: auto; /* Garante que a largura se ajuste proporcionalmente */
     transition: height 0.3s ease; /* Adiciona uma transição suave */
 }
 
-/* --- Ajustes para Header Fixo --- */
+/* --- Ajustes para Cabeçalho Fixo --- */
 main {
-    /* Adiciona um padding no topo igual à altura do header (controlado pela variável --header-height) */
+    /* Adiciona um preenchimento no topo igual à altura do cabeçalho (controlado pela variável --header-height) */
     padding-top: var(--header-height); 
 }
 
 #inicio {
-    /* Faz a seção do vídeo ocupar o restante da altura da tela visível, descontando a altura do header */
+    /* Faz a secção do vídeo ocupar o resto da altura do ecrã visível, descontando a altura do cabeçalho */
     height: calc(100vh - var(--header-height));
+}
+
+/* --- Estilos do Slider de Testemunhos --- */
+.testimonial-slide {
+    /* Garante que o conteúdo dentro do slide não quebre e ocupe todo o espaço */
+    box-sizing: border-box;
+    padding: 0 1rem; /* Espaçamento lateral para não colar nos controlos */
 }
 
