@@ -249,7 +249,145 @@
     </main>
 
     <!-- Modals -->
-    <!-- ... (O código dos seus modals de soluções permanece o mesmo) ... -->
+    <!-- Modal 1: Extração -->
+    <div id="modal-extracao" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="file-search-2"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Extração Inteligente de Anexos</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Preso na tarefa repetitiva de abrir dezenas de ficheiros PDF para extrair anexos incorporados neles? Esse processo manual, além de demorado, é suscetível a erros e consome horas preciosas. Nós transformamos essa tarefa num processo de segundos.
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Como Funciona:</h4>
+            <ol class="list-decimal list-inside text-gray-600 space-y-2 mb-4">
+                <li><strong>Envio:</strong> Envia-nos os ficheiros PDF que contêm os anexos incorporados.</li>
+                <li><strong>Extração:</strong> O nosso sistema automatizado lê cada PDF, identifica todos os anexos presentes dentro dele e guarda-os como ficheiros individuais.</li>
+                <li><strong>Entrega:</strong> Recebe uma pasta com todos os documentos extraídos, nomeados e perfeitamente organizados, prontos para uso.</li>
+            </ol>
+            <h4 class="font-semibold mb-2 text-gray-800">Ideal para:</h4>
+             <p class="text-gray-600">Escritórios de advocacia, contabilidade, engenharia e qualquer empresa que lide com um grande volume de documentação digital.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2: Distribuição -->
+    <div id="modal-distribuicao" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="folder-sync"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Distribuição Automática de Ficheiros</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Cansado de copiar e colar o mesmo ficheiro para várias pastas ou locais diferentes? Se a sua equipa passa horas a mover ficheiros repetidamente, nós temos a solução. Automatizamos a distribuição de documentos!
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Principais Benefícios:</h4>
+             <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><strong>Mais Rápido:</strong> Distribua 1, 10 ou 1000 ficheiros idênticos para todas as pastas que precisar, em segundos.</li>
+                <li><strong>Sem Erros:</strong> Garanta que tudo esteja no lugar certo, sempre, eliminando falhas manuais.</li>
+                <li><strong>Poupe Tempo:</strong> Libere a sua equipa do trabalho repetitivo para se focar em tarefas estratégicas que realmente importam.</li>
+            </ul>
+        </div>
+    </div>
+
+     <!-- Modal 3: Apoio -->
+    <div id="modal-suporte" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="clipboard-list"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Apoio Administrativo Geral</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Além da automação, oferecemos um apoio administrativo completo para garantir que a operação da sua empresa flua sem interrupções. Delegue as tarefas burocráticas e concentre-se no seu core business.
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">Os nossos serviços incluem:</h4>
+             <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Organização e formatação de documentos.</li>
+                <li>Entrada e gestão de dados em sistemas.</li>
+                <li>Registo completo e diagnóstico de imóveis para garantir regularidade e segurança.</li>
+                <li>E outras rotinas administrativas personalizadas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 4: Personalizada -->
+    <div id="modal-personalizada" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                    <i data-lucide="lightbulb"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-600">Automação Personalizada</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Cada empresa tem desafios únicos. Se possui um processo específico que consome tempo e recursos, podemos criar uma solução de automação sob medida para resolver exatamente o seu problema.
+            </p>
+            <h4 class="font-semibold mb-2 text-gray-800">O Nosso Processo:</h4>
+            <ol class="list-decimal list-inside text-gray-600 space-y-2 mb-4">
+                <li><strong>Diagnóstico:</strong> Realizamos uma consultoria para entender o seu fluxo de trabalho, identificar os gargalos e as oportunidades de automação.</li>
+                <li><strong>Desenvolvimento:</strong> A nossa equipa projeta e constrói uma ferramenta ou script personalizado para a sua demanda.</li>
+                <li><strong>Implementação:</strong> Integramos a solução na sua rotina diária, oferecendo a formação necessária para a sua equipa.</li>
+            </ol>
+             <p class="text-gray-600">Da geração de relatórios complexos ao preenchimento automático de formulários, transformamos o seu desafio em eficiência.</p>
+        </div>
+    </div>
+
+    <!-- Modal de Feedback -->
+    <div id="modal-feedback" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="text-center mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Gostou do nosso trabalho?</h2>
+                <p class="text-gray-600 mt-2">O seu feedback é muito importante para nós!</p>
+            </div>
+            <form id="testimonial-form">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                    <div>
+                        <label for="testimonial-name" class="block text-gray-700 font-semibold mb-2">O seu Nome</label>
+                        <input type="text" id="testimonial-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="testimonial-company" class="block text-gray-700 font-semibold mb-2">Empresa / Cargo (Opcional)</label>
+                        <input type="text" id="testimonial-company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="testimonial-message" class="block text-gray-700 font-semibold mb-2">A sua Mensagem</label>
+                    <textarea id="testimonial-message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Descreva a sua experiência connosco..." required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" id="submit-testimonial-btn" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg w-full md:w-auto">Enviar Avaliação</button>
+                </div>
+            </form>
+            <div id="form-success-message" class="hidden mt-6 text-center p-4 bg-green-100 text-green-800 rounded-lg">
+                <p class="font-semibold">Obrigado!</p>
+                <p>A sua avaliação foi enviada e será publicada após revisão.</p>
+            </div>
+             <div id="form-error-message" class="hidden mt-6 text-center p-4 bg-red-100 text-red-800 rounded-lg">
+                <p class="font-semibold">Ocorreu um erro!</p>
+                <p>Por favor, tente novamente mais tarde.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal de Feedback -->
     <div id="modal-feedback" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
