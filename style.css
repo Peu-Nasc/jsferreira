@@ -2,15 +2,41 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo da Seção Hero */
-.hero-bg {
-    background-image: linear-gradient(rgba(29, 38, 51, 0.7), rgba(29, 38, 51, 0.7)), url('https://placehold.co/1920x1080/4a5568/ffffff?text=Fundo+Moderno');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+:root {
+    /* Variável para controlar a altura do cabeçalho de forma centralizada */
+    --header-height: 92px;
 }
 
-/* Animações */
+/* --- Estilos da Seção Hero com Vídeo --- */
+
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Fica atrás do conteúdo */
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre todo o espaço, cortando se necessário */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 38, 51, 0.7); /* Sobreposição escura */
+    z-index: 0;
+}
+
+
+/* --- Animações --- */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -59,7 +85,7 @@ body {
     transform: translateY(0);
 }
 
-/* Estilos do Modal */
+/* --- Estilos do Modal --- */
 .modal {
     opacity: 0;
     pointer-events: none;
@@ -79,15 +105,21 @@ body {
     transform: scale(1);
 }
 
-/* Logo Personalizado */
+/* --- Logo Personalizado --- */
 .custom-logo {
     height: 60px; /* Aumenta a altura para 60px */
     width: auto; /* Garante que a largura se ajuste proporcionalmente */
     transition: height 0.3s ease; /* Adiciona uma transição suave */
 }
 
-/* Reduzir o logo quando o header encolhe */
-header.py-2 .custom-logo {
-    height: 50px;
+/* --- Ajustes para Header Fixo --- */
+main {
+    /* Adiciona um padding no topo igual à altura do header (controlado pela variável --header-height) */
+    padding-top: var(--header-height); 
+}
+
+#inicio {
+    /* Faz a seção do vídeo ocupar o restante da altura da tela visível, descontando a altura do header */
+    height: calc(100vh - var(--header-height));
 }
 

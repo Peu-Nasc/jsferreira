@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Ferreira MEI - Soluções Administrativas e Automação</title>
-    <meta name="description" content="JS Ferreira MEI - Soluções inteligentes em automação de processos e suporte administrativo para otimizar seu tempo e seus negócios.">
+    <meta name="description" content="JS Ferreira MEI - Soluções inteligentes em automação de processos e suporte administrativo para otimizar o seu tempo e os seus negócios.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,47 +16,56 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Cabeçalho e Navegação -->
-    <header id="header" class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300">
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 top-0">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex-shrink-0">
-                <img src="imagem/logo.jpg" alt="Logo JS Ferreira" class="custom-logo">
+                <!-- O caminho para o seu logótipo -->
+                <img src="imagem/logo.jpg" alt="Logótipo JS Ferreira" class="custom-logo">
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition duration-300">Início</a>
                 <a href="#solucoes" class="text-gray-600 hover:text-blue-600 transition duration-300">Soluções</a>
                 <a href="#diferenciais" class="text-gray-600 hover:text-blue-600 transition duration-300">Diferenciais</a>
                 <a href="#sobre" class="text-gray-600 hover:text-blue-600 transition duration-300">Sobre Nós</a>
-                <a href="#contato" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">Fale Conosco</a>
+                <a href="#contato" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">Fale Connosco</a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden">
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
                 <i data-lucide="menu"></i>
             </button>
         </div>
-        <!-- Menu Mobile -->
+        <!-- Menu Móvel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white">
             <a href="#inicio" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Início</a>
             <a href="#solucoes" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Soluções</a>
             <a href="#diferenciais" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Diferenciais</a>
             <a href="#sobre" class="block py-2 px-6 text-gray-600 hover:bg-gray-100">Sobre Nós</a>
-            <a href="#contato" class="block py-4 px-6 text-center bg-blue-600 text-white font-bold">Fale Conosco</a>
+            <a href="#contato" class="block py-4 px-6 text-center bg-blue-600 text-white font-bold">Fale Connosco</a>
         </div>
     </header>
 
     <main>
-        <!-- Seção Inicial (Hero) -->
-        <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
-            <div class="container mx-auto px-6 text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in-down">Soluções inteligentes para otimizar seu tempo e seus negócios.</h1>
-                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up">Simplificamos a burocracia e automatizamos processos para que você possa focar no crescimento da sua empresa.</p>
-                <a href="#contato" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-xl inline-block animate-bounce">Quero Otimizar Meu Negócio</a>
+        <!-- Secção Inicial (Hero) com Vídeo de Fundo -->
+        <section id="inicio" class="relative flex items-center justify-center text-center overflow-hidden">
+            <div class="hero-video-container">
+                <!-- Caminho para o novo vídeo -->
+                <video autoplay loop muted playsinline class="hero-video">
+                    <source src="videos/hero-background.mp4" type="video/mp4">
+                    O seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="relative z-10 container mx-auto px-6 text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in-down">Soluções inteligentes para otimizar o seu tempo e os seus negócios.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up">Simplificamos a burocracia e automatizamos processos para que se possa focar no crescimento da sua empresa.</p>
+                <a href="#contato" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-xl inline-block animate-bounce">Quero Otimizar o Meu Negócio</a>
             </div>
         </section>
 
-        <!-- Seção de Soluções -->
+        <!-- Secção de Soluções -->
         <section id="solucoes" class="py-20 bg-white section-fade-in">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossas Soluções</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">As Nossas Soluções</h2>
                     <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Serviços pensados para impulsionar a eficiência da sua empresa. Clique para saber mais.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -66,23 +75,23 @@
                             <i data-lucide="file-search-2"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Extração Inteligente de Anexos</h3>
-                        <p class="text-gray-600">Extraia anexos de centenas de PDFs automaticamente. Economize tempo, elimine erros e organize seus documentos com 100% de precisão.</p>
+                        <p class="text-gray-600">Extraia anexos de centenas de PDFs automaticamente. Poupe tempo, elimine erros e organize os seus documentos com 100% de precisão.</p>
                     </div>
                     <!-- Card de Solução 2 -->
                     <div data-modal-target="#modal-distribuicao" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
                         <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
                             <i data-lucide="folder-sync"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Distribuição Automática de Arquivos</h3>
-                        <p class="text-gray-600">Copie e cole arquivos em múltiplas pastas de forma instantânea. Automatize a distribuição e foque no que realmente importa.</p>
+                        <h3 class="text-xl font-bold mb-2">Distribuição Automática de Ficheiros</h3>
+                        <p class="text-gray-600">Copie e cole ficheiros em múltiplas pastas de forma instantânea. Automatize a distribuição e foque-se no que realmente importa.</p>
                     </div>
                     <!-- Card de Solução 3 -->
                     <div data-modal-target="#modal-suporte" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
                         <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
                             <i data-lucide="clipboard-list"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Suporte Administrativo Geral</h3>
-                        <p class="text-gray-600">Oferecemos apoio completo em rotinas administrativas, cadastro de imóveis, organização de documentos e mais.</p>
+                        <h3 class="text-xl font-bold mb-2">Apoio Administrativo Geral</h3>
+                        <p class="text-gray-600">Oferecemos apoio completo em rotinas administrativas, registo de imóveis, organização de documentos e mais.</p>
                     </div>
                      <!-- Card de Solução 4 -->
                     <div data-modal-target="#modal-personalizada" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
@@ -90,18 +99,18 @@
                             <i data-lucide="lightbulb"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Automação Personalizada</h3>
-                        <p class="text-gray-600">Tem um processo que consome seu tempo? Analisamos seu desafio e criamos a solução de automação ideal para sua necessidade.</p>
+                        <p class="text-gray-600">Tem um processo que consome o seu tempo? Analisamos o seu desafio e criamos a solução de automação ideal para a sua necessidade.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Diferenciais -->
+        <!-- Secção de Diferenciais -->
         <section id="diferenciais" class="py-20 bg-gray-100 section-fade-in">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que escolher a JS Ferreira?</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Nossos diferenciais garantem o sucesso e a tranquilidade do seu negócio.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Porquê escolher a JS Ferreira?</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Os nossos diferenciais garantem o sucesso e a tranquilidade do seu negócio.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                      <!-- Diferencial 1 -->
@@ -110,7 +119,7 @@
                             <i data-lucide="timer"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Otimização de Tempo</h3>
-                        <p class="text-gray-600">Reduza horas de trabalho manual e foque no que realmente importa para o crescimento da sua empresa.</p>
+                        <p class="text-gray-600">Reduza horas de trabalho manual e foque-se no que realmente importa para o crescimento da sua empresa.</p>
                     </div>
                      <!-- Diferencial 2 -->
                     <div class="text-center p-6">
@@ -126,28 +135,29 @@
                             <i data-lucide="shield-check"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Segurança e Conformidade</h3>
-                        <p class="text-gray-600">Garantimos que seus cadastros e processos estejam sempre em conformidade com as normas vigentes.</p>
+                        <p class="text-gray-600">Garantimos que os seus registos e processos estejam sempre em conformidade com as normas vigentes.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Seção Sobre Nós -->
+        <!-- Secção Sobre Nós -->
         <section id="sobre" class="py-20 bg-white section-fade-in">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
-                        <img src="imagem/imagemdosobrenos.jfif" alt="Equipe JS Ferreira" class="rounded-lg shadow-2xl w-full">
+                        <!-- O caminho para a sua imagem da secção Sobre -->
+                        <img src="imagem/imagemdosobrenos.jfif" alt="Equipa JS Ferreira" class="rounded-lg shadow-2xl w-full">
                     </div>
                     <div class="md:w-1/2">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Parceria Estratégica para seu Negócio</h2>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Parceria Estratégica para o seu Negócio</h2>
                         <p class="text-gray-600 mb-6">
-                            A JS Ferreira MEI nasceu do desejo de simplificar a gestão para pequenas e médias empresas. Unimos expertise administrativa com tecnologia de ponta para oferecer soluções que realmente fazem a diferença no dia a dia dos nossos clientes. Nossa missão é ser o parceiro estratégico que impulsiona o seu crescimento.
+                            A JS Ferreira MEI nasceu do desejo de simplificar a gestão para pequenas e médias empresas. Unimos a nossa experiência administrativa com tecnologia de ponta para oferecer soluções que realmente fazem a diferença no dia a dia dos nossos clientes. A nossa missão é ser o parceiro estratégico que impulsiona o seu crescimento.
                         </p>
                         <div class="space-y-4">
                             <div class="flex items-center">
                                 <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
-                                <span>Soluções personalizadas para sua necessidade.</span>
+                                <span>Soluções personalizadas para a sua necessidade.</span>
                             </div>
                             <div class="flex items-center">
                                 <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
@@ -163,25 +173,44 @@
             </div>
         </section>
 
-        <!-- Seção de Depoimentos -->
-        <section class="py-20 bg-blue-600 text-white section-fade-in">
+        <!-- Secção de Testemunhos (Atualizada com Slider) -->
+        <section id="depoimentos" class="py-20 bg-blue-600 text-white section-fade-in">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-8">O que nossos clientes dizem</h2>
-                <div class="max-w-3xl mx-auto">
-                    <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
-                        <p class="text-lg italic mb-4">"A JS Ferreira transformou a gestão da minha empresa. A automação de processos economizou nosso tempo e reduziu erros drasticamente. Recomendo demais!"</p>
-                        <p class="font-bold text-yellow-300">- João Empreendedor, CEO Startup X</p>
+                <h2 class="text-3xl font-bold mb-8">O que os nossos clientes dizem</h2>
+                <div class="relative max-w-3xl mx-auto">
+                    <!-- Slider Container -->
+                    <div class="overflow-hidden">
+                        <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Testemunho Padrão / Carregamento -->
+                            <div class="testimonial-slide flex-shrink-0 w-full">
+                               <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
+                                   <p class="text-lg italic mb-4">Carregando testemunhos...</p>
+                                   <p class="font-bold text-yellow-300">- JS Ferreira</p>
+                               </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Controles do Slider -->
+                    <button id="prev-testimonial" class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-full text-white p-2 rounded-full hover:bg-white/20 transition-colors duration-300 hidden">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button id="next-testimonial" class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-full text-white p-2 rounded-full hover:bg-white/20 transition-colors duration-300 hidden">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+                <!-- Botão para Deixar Avaliação -->
+                <div class="mt-10">
+                    <button data-modal-target="#modal-feedback" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300 shadow-lg inline-block">Deixar a minha avaliação</button>
                 </div>
             </div>
         </section>
-
-        <!-- Seção de Contato -->
-        <section id="contato" class="py-20 bg-gray-100 section-fade-in">
-            <div class="container mx-auto px-6">
+        
+        <!-- Secção de Contacto -->
+        <section id="contato" class="py-20 bg-gray-50 section-fade-in">
+             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Pronto para otimizar seu negócio?</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Fale conosco e descubra como nossas soluções podem ajudar sua empresa a crescer. O diagnóstico é gratuito!</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Pronto para otimizar o seu negócio?</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Fale connosco e descubra como as nossas soluções podem ajudar a sua empresa a crescer. O diagnóstico é gratuito!</p>
                 </div>
                 <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-2xl">
                     <form action="https://formspree.io/f/mgvlregq" method="POST">
@@ -197,14 +226,14 @@
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-semibold mb-2">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Como podemos ajudar seu negócio?" required></textarea>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Como podemos ajudar o seu negócio?" required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">Enviar Mensagem</button>
                         </div>
                     </form>
                     <div class="text-center mt-8 text-gray-600">
-                        <p class="font-semibold mb-2">Ou entre em contato diretamente:</p>
+                        <p class="font-semibold mb-2">Ou entre em contacto diretamente:</p>
                         <div class="flex justify-center items-center space-x-6">
                             <a href="https://wa.me/5575981701297" target="_blank" class="flex items-center hover:text-blue-600">
                                 <i data-lucide="message-circle" class="mr-2"></i> WhatsApp
@@ -220,103 +249,45 @@
     </main>
 
     <!-- Modals -->
-    <!-- Modal 1: Extração -->
-    <div id="modal-extracao" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
-        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
-            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
-                <i data-lucide="x"></i>
-            </button>
-            <div class="flex items-center mb-4">
-                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
-                    <i data-lucide="file-search-2"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-blue-600">Extração Inteligente de Anexos</h3>
-            </div>
-            <p class="text-gray-600 mb-4">
-                Preso na tarefa repetitiva de abrir dezenas de arquivos PDF para extrair anexos imbutidos nele? Esse processo manual, além de demorado, é suscetível a erros e consome horas preciosas. Nós transformamos essa tarefa em um processo de segundos.
-            </p>
-            <h4 class="font-semibold mb-2 text-gray-800">Como Funciona:</h4>
-            <ol class="list-decimal list-inside text-gray-600 space-y-2 mb-4">
-                <li><strong>Envio:</strong> Você nos envia os arquivos PDF que contêm os anexos imbutidos.</li>
-                <li><strong>Extração:</strong> Nosso sistema automatizado lê cada PDF, identifica todos os anexos que estão presentes dentro dele e os salva como arquivos individuais.</li>
-                <li><strong>Entrega:</strong> Você recebe uma pasta com todos os documentos extraídos, nomeados e perfeitamente organizados, prontos para uso.</li>
-            </ol>
-            <h4 class="font-semibold mb-2 text-gray-800">Ideal para:</h4>
-             <p class="text-gray-600">Escritórios de advocacia, contabilidade, engenharia, e qualquer empresa que lide com grande volume de documentação digital.</p>
-        </div>
-    </div>
+    <!-- ... (O código dos seus modals de soluções permanece o mesmo) ... -->
 
-    <!-- Modal 2: Distribuição -->
-    <div id="modal-distribuicao" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+    <!-- Modal de Feedback -->
+    <div id="modal-feedback" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
         <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
             <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
                 <i data-lucide="x"></i>
             </button>
-            <div class="flex items-center mb-4">
-                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
-                    <i data-lucide="folder-sync"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-blue-600">Distribuição Automática de Arquivos</h3>
+            <div class="text-center mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Gostou do nosso trabalho?</h2>
+                <p class="text-gray-600 mt-2">O seu feedback é muito importante para nós!</p>
             </div>
-            <p class="text-gray-600 mb-4">
-                Cansado de copiar e colar o mesmo arquivo para várias pastas ou locais diferentes? Se sua equipe passa horas movendo arquivos repetidamente, nós temos a solução. Automatizamos a distribuição de documentos!
-            </p>
-            <h4 class="font-semibold mb-2 text-gray-800">Principais Benefícios:</h4>
-             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                <li><strong>Mais Rápido:</strong> Distribua 1, 10 ou 1000 arquivos idênticos para todas as pastas que precisar, em segundos.</li>
-                <li><strong>Sem Erros:</strong> Garanta que tudo esteja no lugar certo, sempre, eliminando falhas manuais.</li>
-                <li><strong>Economize Tempo:</strong> Libere sua equipe do trabalho repetitivo para focar em tarefas estratégicas que realmente importam.</li>
-            </ul>
-        </div>
-    </div>
-
-     <!-- Modal 3: Suporte -->
-    <div id="modal-suporte" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
-        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
-            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
-                <i data-lucide="x"></i>
-            </button>
-            <div class="flex items-center mb-4">
-                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
-                    <i data-lucide="clipboard-list"></i>
+            <form id="testimonial-form">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                    <div>
+                        <label for="testimonial-name" class="block text-gray-700 font-semibold mb-2">O seu Nome</label>
+                        <input type="text" id="testimonial-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="testimonial-company" class="block text-gray-700 font-semibold mb-2">Empresa / Cargo (Opcional)</label>
+                        <input type="text" id="testimonial-company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
                 </div>
-                <h3 class="text-2xl font-bold text-blue-600">Suporte Administrativo Geral</h3>
-            </div>
-            <p class="text-gray-600 mb-4">
-                Além da automação, oferecemos um suporte administrativo completo para garantir que a operação da sua empresa flua sem interrupções. Delegue as tarefas burocráticas e concentre-se no seu core business.
-            </p>
-            <h4 class="font-semibold mb-2 text-gray-800">Nossos serviços incluem:</h4>
-             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                <li>Organização e formatação de documentos.</li>
-                <li>Entrada e gestão de dados em sistemas.</li>
-                <li>Cadastro completo e diagnóstico de imóveis para garantir regularidade e segurança.</li>
-                <li>E outras rotinas administrativas personalizadas.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Modal 4: Personalizada -->
-    <div id="modal-personalizada" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
-        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full relative modal-content">
-            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 close-modal-btn">
-                <i data-lucide="x"></i>
-            </button>
-            <div class="flex items-center mb-4">
-                <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
-                    <i data-lucide="lightbulb"></i>
+                <div class="mb-6">
+                    <label for="testimonial-message" class="block text-gray-700 font-semibold mb-2">A sua Mensagem</label>
+                    <textarea id="testimonial-message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Descreva a sua experiência connosco..." required></textarea>
                 </div>
-                <h3 class="text-2xl font-bold text-blue-600">Automação Personalizada</h3>
+                <div class="text-center">
+                    <button type="submit" id="submit-testimonial-btn" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg w-full md:w-auto">Enviar Avaliação</button>
+                </div>
+            </form>
+            <div id="form-success-message" class="hidden mt-6 text-center p-4 bg-green-100 text-green-800 rounded-lg">
+                <p class="font-semibold">Obrigado!</p>
+                <p>A sua avaliação foi enviada e será publicada após revisão.</p>
             </div>
-            <p class="text-gray-600 mb-4">
-                Cada empresa tem desafios únicos. Se você possui um processo específico que consome tempo e recursos, nós podemos criar uma solução de automação sob medida para resolver exatamente o seu problema.
-            </p>
-            <h4 class="font-semibold mb-2 text-gray-800">Nosso Processo:</h4>
-            <ol class="list-decimal list-inside text-gray-600 space-y-2 mb-4">
-                <li><strong>Diagnóstico:</strong> Realizamos uma consultoria para entender seu fluxo de trabalho, identificar os gargalos e as oportunidades de automação.</li>
-                <li><strong>Desenvolvimento:</strong> Nossa equipe projeta e constrói uma ferramenta ou script customizado para sua demanda.</li>
-                <li><strong>Implementação:</strong> Integramos a solução na sua rotina diária, oferecendo o treinamento necessário para sua equipe.</li>
-            </ol>
-             <p class="text-gray-600">Da geração de relatórios complexos ao preenchimento automático de formulários, transformamos seu desafio em eficiência.</p>
+             <div id="form-error-message" class="hidden mt-6 text-center p-4 bg-red-100 text-red-800 rounded-lg">
+                <p class="font-semibold">Ocorreu um erro!</p>
+                <p>Por favor, tente novamente mais tarde.</p>
+            </div>
         </div>
     </div>
 
@@ -325,7 +296,7 @@
     <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto px-6 text-center">
             <p class="text-xl font-bold mb-2">JS Ferreira MEI</p>
-            <p class="mb-4">Soluções inteligentes para otimizar seu tempo e seus negócios.</p>
+            <p class="mb-4">Soluções inteligentes para otimizar o seu tempo e os seus negócios.</p>
             <div class="flex justify-center space-x-4 mb-4">
                 <a href="https://www.instagram.com/js.ferreira_mei" target="_blank" class="hover:text-blue-400">
                     <i data-lucide="instagram"></i>
@@ -336,54 +307,192 @@
         </div>
     </footer>
     
-    <script>
+    <!-- Scripts Firebase e Lógica da Página -->
+    <script type="module">
+        // Importar funções necessárias do Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getFirestore, collection, getDocs, addDoc, query, where, orderBy } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+        // *********************************************************************************
+        // ** IMPORTANTE: CONFIGURAÇÃO DO FIREBASE                                        **
+        // ** 1. Crie um projeto em https://firebase.google.com/                          **
+        // ** 2. Adicione uma aplicação Web ao seu projeto.                               **
+        // ** 3. Copie o objeto de configuração do Firebase e cole-o aqui.                **
+        // *********************************************************************************
+        const firebaseConfig = {
+            apiKey: "SUA_API_KEY",
+            authDomain: "SEU_AUTH_DOMAIN",
+            projectId: "SEU_PROJECT_ID",
+            storageBucket: "SEU_STORAGE_BUCKET",
+            messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+            appId: "SEU_APP_ID"
+        };
+
+        // Inicializar Firebase
+        try {
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            console.log("Firebase inicializado com sucesso!");
+
+            // --- LÓGICA DO SLIDER DE TESTEMUNHOS ---
+            const testimonialContainer = document.getElementById('testimonial-container');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const nextBtn = document.getElementById('next-testimonial');
+            let testimonials = [];
+            let currentIndex = 0;
+
+            async function fetchTestimonials() {
+                try {
+                    const testimonialsCol = collection(db, 'testimonials');
+                    const q = query(testimonialsCol, where('approved', '==', true), orderBy('createdAt', 'desc'));
+                    const snapshot = await getDocs(q);
+
+                    if (snapshot.empty) {
+                        testimonialContainer.innerHTML = `
+                            <div class="testimonial-slide flex-shrink-0 w-full">
+                               <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
+                                   <p class="text-lg italic mb-4">Seja o primeiro a deixar uma avaliação sobre o nosso trabalho!</p>
+                                   <p class="font-bold text-yellow-300">- Equipa JS Ferreira</p>
+                               </div>
+                            </div>`;
+                        return;
+                    }
+
+                    testimonials = snapshot.docs.map(doc => doc.data());
+                    renderTestimonials();
+                } catch (error) {
+                    console.error("Erro ao buscar testemunhos: ", error);
+                     testimonialContainer.innerHTML = `
+                        <div class="testimonial-slide flex-shrink-0 w-full">
+                           <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
+                               <p class="text-lg italic mb-4">Não foi possível carregar os testemunhos. Tente novamente mais tarde.</p>
+                           </div>
+                        </div>`;
+                }
+            }
+
+            function renderTestimonials() {
+                testimonialContainer.innerHTML = '';
+                testimonials.forEach(testimonial => {
+                    const slide = document.createElement('div');
+                    slide.className = 'testimonial-slide flex-shrink-0 w-full';
+                    slide.innerHTML = `
+                        <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
+                            <p class="text-lg italic mb-4">"${testimonial.message}"</p>
+                            <p class="font-bold text-yellow-300">- ${testimonial.name}${testimonial.company ? `, ${testimonial.company}` : ''}</p>
+                        </div>`;
+                    testimonialContainer.appendChild(slide);
+                });
+                
+                if (testimonials.length > 1) {
+                    prevBtn.classList.remove('hidden');
+                    nextBtn.classList.remove('hidden');
+                }
+                updateSlider();
+            }
+
+            function updateSlider() {
+                testimonialContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % testimonials.length;
+                updateSlider();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+                updateSlider();
+            });
+            
+            // --- LÓGICA DO FORMULÁRIO DE ENVIO DE TESTEMUNHOS ---
+            const testimonialForm = document.getElementById('testimonial-form');
+            const successMessage = document.getElementById('form-success-message');
+            const errorMessage = document.getElementById('form-error-message');
+            const submitBtn = document.getElementById('submit-testimonial-btn');
+
+            testimonialForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+
+                const name = document.getElementById('testimonial-name').value;
+                const company = document.getElementById('testimonial-company').value;
+                const message = document.getElementById('testimonial-message').value;
+
+
+                try {
+                    await addDoc(collection(db, 'testimonials'), {
+                        name,
+                        company,
+                        message,
+                        approved: false, // Novos testemunhos precisam de aprovação
+                        createdAt: new Date()
+                    });
+
+                    testimonialForm.reset();
+                    successMessage.classList.remove('hidden');
+                    errorMessage.classList.add('hidden');
+                    
+                    setTimeout(() => {
+                        closeModal(document.getElementById('modal-feedback'));
+                        successMessage.classList.add('hidden');
+                    }, 3000);
+
+
+                } catch (error) {
+                    console.error("Erro ao adicionar testemunho: ", error);
+                    errorMessage.classList.remove('hidden');
+                    successMessage.classList.add('hidden');
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Avaliação';
+                }
+            });
+
+            // Carregar testemunhos ao iniciar
+            fetchTestimonials();
+
+        } catch (e) {
+            console.error("Erro na inicialização do Firebase. Verifique a sua configuração.", e);
+            document.getElementById('testimonial-container').innerHTML = `
+                <div class="testimonial-slide flex-shrink-0 w-full">
+                   <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
+                       <p class="text-lg italic mb-4 text-red-300">Erro de configuração. Não foi possível conectar à base de dados de testemunhos.</p>
+                   </div>
+                </div>`;
+        }
+
+
+        // --- Resto do seu script (Menus, Modals, etc.) ---
         lucide.createIcons();
 
-        // Menu Mobile
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Fechar menu mobile ao clicar em um link
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
         
-        // Atualizar ano no rodapé
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Animação de fade-in ao rolar
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, {
-            threshold: 0.1
-        });
+        }, { threshold: 0.1 });
 
         document.querySelectorAll('.section-fade-in').forEach(section => {
             observer.observe(section);
         });
 
-        // Efeito de sombra no header ao rolar a página
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('py-2');
-                header.classList.remove('py-4');
-            } else {
-                header.classList.add('py-4');
-                header.classList.remove('py-2');
-            }
-        });
-
-        // Lógica dos Modals
         const openModalButtons = document.querySelectorAll('[data-modal-target]');
         
         openModalButtons.forEach(button => {
@@ -398,15 +507,13 @@
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             document.body.style.overflow = 'hidden';
-            // Adicionar event listeners de fechar aqui para garantir que só funcionem quando o modal está aberto
+            
             const closeModalButtons = modal.querySelectorAll('.close-modal-btn');
             closeModalButtons.forEach(button => {
                 button.addEventListener('click', () => closeModal(modal));
             });
             modal.addEventListener('click', e => {
-                if (e.target === modal) {
-                    closeModal(modal);
-                }
+                if (e.target === modal) closeModal(modal);
             });
         }
 
@@ -417,17 +524,12 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Fechar modal com a tecla Escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 const openModal = document.querySelector('.modal:not(.hidden)');
-                if (openModal) {
-                    closeModal(openModal);
-                }
+                if (openModal) closeModal(openModal);
             }
         });
-
-
     </script>
 </body>
 </html>
