@@ -147,7 +147,7 @@
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
                         <!-- O caminho para a sua imagem da secção Sobre -->
-                        <img src="imagem/imagemdosobrenos.jfif" alt="Equipa JS Ferreira" class="rounded-lg shadow-2xl w-full">
+                        <img src="imagem/imagemdosobrenos.jfif" alt="Equipe JS Ferreira" class="rounded-lg shadow-2xl w-full">
                     </div>
                     <div class="md:w-1/2">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">Parceria Estratégica para o seu Negócio</h2>
@@ -311,18 +311,18 @@
     <script type="module">
         // Importar funções necessárias do Firebase
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import { getFirestore, collection, getDocs, addDoc, query, where, orderBy } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+        import { getFirestore, collection, getDocs, addDoc, query, where } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
         // *********************************************************************************
-        // ** COLE AS SUAS CHAVES DE CONFIGURAÇÃO DO FIREBASE AQUI                      **
+        // ** CONFIGURAÇÃO DO FIREBASE                                                  **
         // *********************************************************************************
         const firebaseConfig = {
-            apiKey: "AIzaSyA--D4lqptEjsOeghcXeqaJDGeUEB2T6ms",
-            authDomain: "site-jsferreira.firebaseapp.com",
-            projectId: "site-jsferreira",
-            storageBucket: "site-jsferreira.appspot.com",
-            messagingSenderId: "597784587456",
-            appId: "1:597784587456:web:2736c7ddbe5ab689819125"
+          apiKey: "AIzaSyA--D4lqptEjsOeghcXeqaJDGeUEB2T6ms",
+          authDomain: "site-jsferreira.firebaseapp.com",
+          projectId: "site-jsferreira",
+          storageBucket: "site-jsferreira.firebasestorage.app",
+          messagingSenderId: "597784587456",
+          appId: "1:597784587456:web:2736c7ddbe5ab689819125"
         };
         // *********************************************************************************
         // ** FIM DA ÁREA DE CONFIGURAÇÃO                                                 **
@@ -345,7 +345,9 @@
             async function fetchTestimonials() {
                 try {
                     const testimonialsCol = collection(db, 'testimonials');
-                    const q = query(testimonialsCol, where('approved', '==', true), orderBy('createdAt', 'desc'));
+                    // CORREÇÃO: Removida a ordenação 'orderBy' para evitar a necessidade de um índice complexo.
+                    // A ordenação será feita no lado do cliente.
+                    const q = query(testimonialsCol, where('approved', '==', true));
                     const snapshot = await getDocs(q);
 
                     if (snapshot.empty) {
@@ -353,14 +355,21 @@
                             <div class="testimonial-slide flex-shrink-0 w-full">
                                <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
                                    <p class="text-lg italic mb-4">Seja o primeiro a deixar uma avaliação sobre o nosso trabalho!</p>
-                                   <p class="font-bold text-yellow-300">- Equipa JS Ferreira</p>
+                                   <p class="font-bold text-yellow-300">- Equipe JS Ferreira</p>
                                </div>
                             </div>`;
                         return;
                     }
 
-                    testimonials = snapshot.docs.map(doc => doc.data());
+                    let fetchedTestimonials = snapshot.docs.map(doc => doc.data());
+                    
+                    // CORREÇÃO: Ordenar os testemunhos no lado do cliente (navegador).
+                    // Isto mostra os mais recentes primeiro.
+                    fetchedTestimonials.sort((a, b) => b.createdAt.toDate() - a.createdAt.toDate());
+
+                    testimonials = fetchedTestimonials;
                     renderTestimonials();
+
                 } catch (error) {
                     console.error("Erro ao buscar testemunhos: ", error);
                      testimonialContainer.innerHTML = `
