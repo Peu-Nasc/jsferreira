@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Ferreira MEI - Soluções Administrativas e Automação</title>
-    <meta name="description" content="JS Ferreira MEI - Soluções inteligentes em automação de processos e suporte administrativo para otimizar o seu tempo e os seus negócios.">
+    
+    <!-- Título Otimizado para Empresas -->
+    <title>JS Ferreira | Soluções Administrativas e Automação para Empresas</title>
+    
+    <!-- Meta Descrição Otimizada (Melhorada) -->
+    <meta name="description" content="Otimize o seu tempo e os seus negócios com a JS Ferreira. Oferecemos automação de processos, suporte administrativo e criação de websites para empresas em todo o Brasil. Peça um diagnóstico gratuito!">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Dados Estruturados (Schema.org) Otimizados para Serviços etiqueta de informações para o google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "JS Ferreira",
+      "url": "https://peu-nasc.github.io/jsferreira/",
+      "logo": "https://peu-nasc.github.io/jsferreira/imagem/logo.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5575981701297",
+        "contactType": "Customer Service"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brazil"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Automação e Administrativos",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Extração Inteligente de Anexos",
+              "name": "Extração Inteligente de Anexos",
+              "description": "Extração automática de anexos de ficheiros PDF para otimizar o fluxo de trabalho de documentos."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Distribuição Automática de Ficheiros",
+              "name": "Distribuição Automática de Ficheiros",
+              "description": "Serviço de automação para copiar e distribuir ficheiros para múltiplos destinos de forma eficiente."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Serviços de Digitação",
+              "name": "Serviços de Digitação",
+              "description": "Transcrição profissional de documentos e áudio para formato digital."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Criação de Websites e Portfólios",
+              "name": "Criação de Websites e Portfólios",
+              "description": "Desenvolvimento de websites e portfólios online para empresas e profissionais."
+            }
+          }
+        ]
+      }
+    }
+    </script>
 
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -19,8 +86,7 @@
     <header id="header" class="bg-white shadow-md fixed w-full z-50 top-0">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex-shrink-0">
-                <!-- O caminho para o seu logótipo -->
-                <img src="imagem/logo.jpg" alt="Logótipo JS Ferreira" class="custom-logo">
+                <img src="imagem/logo.jpg" alt="Logótipo da JS Ferreira - Soluções Administrativas" class="custom-logo">
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition duration-300">Início</a>
@@ -65,8 +131,8 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossos Serviços</h2>
                     <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Serviços pensados para impulsionar a eficiência da sua empresa. Clique para saber mais.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Card de Serviços 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card de Serviço 1 -->
                     <div data-modal-target="#modal-extracao" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
                         <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
                             <i data-lucide="file-search-2"></i>
@@ -74,7 +140,7 @@
                         <h3 class="text-xl font-bold mb-2">Extração Inteligente de Anexos</h3>
                         <p class="text-gray-600">Extraia anexos de centenas de PDFs automaticamente. Poupe tempo, elimine erros e organize os seus documentos com 100% de precisão.</p>
                     </div>
-                    <!-- Card de Serviços 2 -->
+                    <!-- Card de Serviço 2 -->
                     <div data-modal-target="#modal-distribuicao" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
                         <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
                             <i data-lucide="folder-sync"></i>
@@ -82,23 +148,7 @@
                         <h3 class="text-xl font-bold mb-2">Distribuição Automática de Ficheiros</h3>
                         <p class="text-gray-600">Copie e cole ficheiros em múltiplas pastas de forma instantânea. Automatize a distribuição e foque-se no que realmente importa.</p>
                     </div>
-                    <!-- Card de Serviços 3 -->
-                    <div data-modal-target="#modal-suporte" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
-                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
-                            <i data-lucide="clipboard-list"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Apoio Administrativo Geral</h3>
-                        <p class="text-gray-600">Oferecemos apoio completo em rotinas administrativas, registo de imóveis, organização de documentos e mais.</p>
-                    </div>
-                     <!-- Card de Serviços 4 -->
-                    <div data-modal-target="#modal-personalizada" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
-                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
-                            <i data-lucide="lightbulb"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Automação Personalizada</h3>
-                        <p class="text-gray-600">Tem um processo que consome o seu tempo? Analisamos o seu desafio e criamos a Serviços de automação ideal para a sua necessidade.</p>
-                    </div>
-                    <!-- Card de Serviços 5 -->
+                     <!-- Card de Serviço 3 -->
                     <div data-modal-target="#modal-digitacao" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
                         <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
                             <i data-lucide="type"></i>
@@ -106,13 +156,29 @@
                         <h3 class="text-xl font-bold mb-2">Serviços de Digitação</h3>
                         <p class="text-gray-600">Transcrevemos os seus documentos físicos ou áudios para formato digital com agilidade.</p>
                     </div>
-                     <!-- Card de Serviços 6 -->
+                     <!-- Card de Serviço 4 -->
                     <div data-modal-target="#modal-websites" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
                         <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
                             <i data-lucide="layout-template"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Criação de Websites e Portfólios</h3>
                         <p class="text-gray-600">Desenvolvemos a sua presença online com sites e portfólios modernos e profissionais.</p>
+                    </div>
+                    <!-- Card de Serviço 5 -->
+                    <div data-modal-target="#modal-suporte" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
+                            <i data-lucide="clipboard-list"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Apoio Administrativo no Geral</h3>
+                        <p class="text-gray-600">Oferecemos apoio completo em rotinas administrativas, registo de imóveis, organização de documentos e mais.</p>
+                    </div>
+                     <!-- Card de Serviço 6 -->
+                    <div data-modal-target="#modal-personalizada" class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center cursor-pointer">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-4 inline-flex mb-4">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Automação Personalizada</h3>
+                        <p class="text-gray-600">Tem um processo que consome o seu tempo? Analisamos o seu desafio e criamos a Serviços de automação ideal para a sua necessidade.</p>
                     </div>
                 </div>
             </div>
@@ -159,13 +225,12 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
-                        <!-- O caminho para a sua imagem da secção Sobre -->
-                        <img src="imagem/imagemdosobrenos.jfif" alt="Equipa JS Ferreira" class="rounded-lg shadow-2xl w-full">
+                        <img src="imagem/imagemdosobrenos.jfif" alt="Imagem da equipa da JS Ferreira a planear um projeto" class="rounded-lg shadow-2xl w-full">
                     </div>
                     <div class="md:w-1/2">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">Parceria Estratégica para o seu Negócio</h2>
                         <p class="text-gray-600 mb-6">
-                            A JS Ferreira MEI nasceu do desejo de simplificar a gestão para pequenas e médias empresas. Unimos a nossa experiência administrativa com tecnologia de ponta para oferecer soluções que realmente fazem a diferença no dia a dia dos nossos clientes. A nossa missão é ser o parceiro estratégico que impulsiona o seu crescimento.
+                            A JS Ferreira nasceu do desejo de simplificar a gestão para pequenas e médias empresas. Unimos a nossa experiência administrativa com tecnologia de ponta para oferecer soluções que realmente fazem a diferença no dia a dia dos nossos clientes. A nossa missão é ser o parceiro estratégico que impulsiona o seu crescimento.
                         </p>
                         <div class="space-y-4">
                             <div class="flex items-center">
@@ -186,15 +251,13 @@
             </div>
         </section>
 
-        <!-- Secção de Testemunhos (Atualizada com Slider) -->
+        <!-- Secção de Testemunhos-->
         <section id="depoimentos" class="py-20 bg-blue-600 text-white section-fade-in">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-8">O que os nossos clientes dizem</h2>
                 <div class="relative max-w-3xl mx-auto">
-                    <!-- Slider Container -->
                     <div class="overflow-hidden">
                         <div id="testimonial-container" class="flex transition-transform duration-500 ease-in-out">
-                            <!-- Testemunho Padrão / Carregamento -->
                             <div class="testimonial-slide flex-shrink-0 w-full">
                                <div class="bg-blue-700 p-8 rounded-xl shadow-lg">
                                    <p class="text-lg italic mb-4">Carregando testemunhos...</p>
@@ -203,15 +266,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Controles do Slider -->
-                    <button id="prev-testimonial" class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-full text-white p-2 rounded-full hover:bg-white/20 transition-colors duration-300 hidden">
-                        <i data-lucide="chevron-left"></i>
-                    </button>
-                    <button id="next-testimonial" class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-full text-white p-2 rounded-full hover:bg-white/20 transition-colors duration-300 hidden">
-                        <i data-lucide="chevron-right"></i>
-                    </button>
+                    <button id="prev-testimonial" class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-full text-white p-2 rounded-full hover:bg-white/20 transition-colors duration-300 hidden"><i data-lucide="chevron-left"></i></button>
+                    <button id="next-testimonial" class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-full text-white p-2 rounded-full hover:bg-white/20 transition-colors duration-300 hidden"><i data-lucide="chevron-right"></i></button>
                 </div>
-                <!-- Botão para Deixar Avaliação -->
                 <div class="mt-10">
                     <button data-modal-target="#modal-feedback" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300 shadow-lg inline-block">Deixar a minha avaliação</button>
                 </div>
@@ -466,19 +523,17 @@
         </div>
     </div>
 
-
-    <!-- Rodapé -->
+    <!-- Rodapé  -->
     <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-xl font-bold mb-2">JS Ferreira MEI</p>
+            <p class="text-xl font-bold mb-2">JS Ferreira</p>
             <p class="mb-4">Soluções inteligentes para otimizar o seu tempo e os seus negócios.</p>
             <div class="flex justify-center space-x-4 mb-4">
                 <a href="https://www.instagram.com/js.ferreira_mei" target="_blank" class="hover:text-blue-400">
                     <i data-lucide="instagram"></i>
                 </a>
-                <!-- Adicione outras redes sociais se tiver -->
             </div>
-            <p class="text-gray-400 text-sm">&copy; <span id="year"></span> JS Ferreira MEI. Todos os direitos reservados.</p>
+            <p class="text-gray-400 text-sm">&copy; <span id="year"></span> JS Ferreira. Todos os direitos reservados.</p>
         </div>
     </footer>
     
